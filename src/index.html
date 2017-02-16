@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html ng-app="DEMOapp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>AngularJS Demo</title>
+
+    <!-- build:css assets/css/app.min.css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- endbuild -->
+
+    <!-- build:css assets/libs/vendor.min.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbuild -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<!-- build:js assets/libs/shimrespond.min.js -->
+	      <script src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+	      <script src="bower_components/respondJS/dest/respond.min.js"></script>
+    	<!-- endbuild -->
+    <![endif]-->
+
+</head>
+<body ng-controller="mainController">
+
+    <div header>
+    </div>
+
+    <div name="mainAppView" id="mainAppView" class="main-view" ng-view>
+    </div>
+
+    <div footer>
+    </div>
+
+    <!-- build:js assets/libs/vendor.min.js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.js -->
+    <script src="app/App/module_app.js"></script>
+        <script src="app/App/controllers/mainController.js"></script>
+        <script src="app/App/providers/accountManagement.js"></script>
+        <script src="app/App/headerfooter/headerfooterController.js"></script>
+        <script src="app/App/headerfooter/headerDirective.js"></script>
+        <script src="app/App/headerfooter/footerDirective.js"></script>
+        <script src="app/App/pages/pageHome/homePageController.js"></script>
+        <script src="app/App/pages/pageDashboard/dashboardPageController.js"></script>
+        <script src="app/App/pages/pageEmployees/employeesPageController.js"></script>
+        <script src="app/App/pages/pageProfile/profilePageController.js"></script>
+
+    <script src="app/Component/module_component.js"></script>
+        <script src="app/Component/login/loginController.js"></script>
+        <script src="app/Component/login/loginDirective.js"></script>
+        <script src="app/Component/employeesList/employeesListController.js"></script>
+        <script src="app/Component/employeesList/employeesListDirective.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/services.js -->
+    <script src="app/Content/module_content.js"></script>
+        <script src="app/Content/providers/contentFactory.js"></script>
+
+    <script src="app/Session/module_session.js"></script>
+        <script src="app/Session/providers/sessionFactory.js"></script>
+
+    <script src="app/Util/module_util.js"></script>
+        <script src="app/Util/providers/underscoreFactory.js"></script>
+        <script src="app/Util/providers/helperFactory.js"></script>
+        <script src="app/Util/filters/filter_trust.js"></script>
+
+    <script src="app/WebRequest/module_webRequest.js"></script>
+        <script src="app/WebRequest/providers/selfHostedRequest.js"></script>
+        <script src="app/WebRequest/providers/flashAPIRequest.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:js assets/js/customized.min.js -->
+    <script src="assets/js/custom-example.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<header role="banner" ng-if="isLoggedIn">
+
+    <a class="skip-navigation sr-only sr-only-focusable" href="#mainAppView" ng-click="scrollTo('mainAppView', $event)">Skip Navigation</a>
+
+    <div class="top-bar clearfix">
+        <div class="pull-left">
+            <button type="button" class="nobutton" ng-click="mainToggle($event)" aria-expanded="false">
+                <i class="fa fa-bars fa-lg">
+                    <span id="expandText" class="sr-only">Expand Navigation</span>
+                </i>
+            </button>
+
+            <a class="brand" href="#/">
+                <img class="logo" src="assets/img/logo.png" alt="Department of Homeland Security">
+                <span class="sr-only"> SOAR logo</span>
+            </a>
+        </div>
+
+        <div class="pull-right">
+            
+            <a ng-href="#/employees">
+                Give Kudos
+            </a>
+
+            <i class="fa fa-user" aria-hidden="true"></i> {{firstName}} <i class="fa fa-chevron-down" aria-expanded="false"></i>
+
+
+            <a ng-href="#/logout">
+                {{t.logout}}
+            </a>
+            
+        </div>
+    </div>
+
+    <div ng-if="showMainMenu" class="overlay" ng-click="mainToggle()"></div>
+    <nav ng-if="showMainMenu" aria-hidden="true" aria-label="Main Navigation">
+
+        <button class="nobutton" type="button" ng-click="mainToggle()">
+            <i class="fa fa-times">
+                <span class="sr-only">Close Menu</span>
+            </i>
+        </button>
+
+        <ul>
+            <li ng-repeat="item in primaryNav" ng-class="{ active: isActive('#/'+item.path)}">
+                <a ng-href="#/{{item.path}}">
+                    <i class="fa" ng-class="item.icon"></i> {{t[item.translationKey]}}
+                </a>
+            </li>
+            <li>
+                <a ng-href="#/logout">
+                    {{t.logout}}
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>

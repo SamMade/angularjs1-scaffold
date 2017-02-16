@@ -1,0 +1,157 @@
+/* Custom App global variables */
+/* bootstrap breakpoints */
+/* Includes */
+.main-view {
+  margin-bottom: 100px;
+}
+.main-view .buffer-top {
+  margin-top: 100px;
+}
+@media (max-width: 992px) {
+  .main-view .buffer-top {
+    margin-top: 40px;
+  }
+}
+.main-view .component {
+  padding: 30px 0;
+}
+.main-view .inner-border {
+  border: 1px solid #000;
+}
+header .skip-navigation {
+  position: absolute;
+}
+header .top-bar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+header .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #666;
+  opacity: 0.7;
+  z-index: 9980;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9990;
+  background-color: #333;
+  padding: 40px 20px;
+  color: #fff;
+}
+header nav a {
+  color: #fff;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header nav ul li {
+  padding: 10px 15px;
+}
+header nav ul li a {
+  display: block;
+  width: 100%;
+}
+header img.logo {
+  width: 150px;
+}
+@media (max-width: 992px) {
+  header img.logo {
+    width: 100px;
+  }
+}
+footer img.logo {
+  width: 150px;
+}
+@media (max-width: 992px) {
+  footer img.logo {
+    width: 200px;
+  }
+}
+#intro {
+  font-size: 16px;
+}
+#intro p {
+  margin-bottom: 26px;
+  margin-top: 0;
+  line-height: 24px;
+}
+#intro p + div {
+  padding: 26px 30px;
+  background: #f6fafc;
+  border: 1px solid #e1ebef;
+  margin-bottom: 22px;
+}
+#intro p + div P {
+  font-size: 24px;
+}
+#intro p + div ul li {
+  margin-bottom: 10px;
+}
+#intro .intro-disclaimer {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#intro button {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 0;
+}
+input {
+  width: 100%;
+}
+.inside-label label {
+  position: absolute;
+  padding-top: 1px;
+  padding-left: 3px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #aaa;
+}
+.inside-label label.invalid {
+  color: red;
+}
+.inside-label input {
+  padding-top: 22px;
+  padding-left: 5px;
+}
+button.nobutton {
+  border: none;
+  background-color: inherit;
+}
+button.btn-black {
+  color: #fff;
+  background-color: #000;
+  border-radius: inherit;
+}
+button.btn-black:focus,
+button.btn-black:hover {
+  background-color: #666;
+}
+.login-component button {
+  width: 100%;
+}
+.login-component button.disabled,
+.login-component button[disabled] {
+  opacity: .25;
+}
+.login-component button.disabled:hover,
+.login-component button[disabled]:hover,
+.login-component button.disabled:focus,
+.login-component button[disabled]:focus {
+  background-color: #000;
+}
+.employee-list-component .employee {
+  padding: 10px 15px;
+}
+.employee-list-component .employee .row {
+  padding: 5px 15px;
+}

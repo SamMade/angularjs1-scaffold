@@ -1,0 +1,65 @@
+{
+    "primaryNav": [
+        {
+            "translationKey":"home", 
+            "path":"dashboard",
+            "icon":"fa-home"
+        },{
+            "translationKey":"profile",    
+            "path":"myprofile",
+            "icon":"fa-user"
+        },{
+            "translationKey":"notifications", 
+            "path":"resources",
+            "icon":"fa-bell"
+        },{
+            "translationKey":"settings", 
+            "path":"settings",
+            "icon":"fa-cog"
+        },{
+            "translationKey":"help", 
+            "path":"help",
+            "icon":"fa-envelope"
+        }
+    ],
+    "en": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "notifications": "Notifications",
+        "settings": "Settings",
+        "help": "Help",
+        "login": "Login",
+        "logout": "Logout",
+        "accountmanagement": "Account Management",
+        "helpcenter": "Help Center",
+        "profile": "Profile",
+        "preferences": "Preferences",
+        "techsupport": "Tech Support",
+        "menu": "Menu",
+        "archive": "Archive",
+        "contactus": "Contact Us",
+        "nondescrimination": "NONDISCRIMINATION / ACCESSIBILITY",
+        "plainwriting": "PLAIN WRITING",
+        "footerlinks": "PRIVACY POLICY | PRIVACY SETTINGS | LINKING POLICY | USING THIS SITE"
+    },
+    "es": {
+        "home": "Inicio",
+        "dashboard": "Tablero",
+        "notifications": "notifications",
+        "settings": "Settings",
+        "help": "Ayuda",
+        "login": "iniciar sesión",
+        "logout": "Cerrar Sesión",
+        "accountmanagement": "Administración de cuentas",
+        "helpcenter": "Centro de ayuda",
+        "profile": "Perfil",
+        "preferences": "Preferencias",
+        "techsupport": "Soporte Técnico",
+        "menu": "Menú",
+        "archive": "Archivo",
+        "contactus": "Contáctenos",
+        "nondescrimination": "NO DISCRIMINACIÓN / ACCESIBILIDAD",
+        "plainwriting": "LENGUAJE SENCILLO",
+        "footerlinks": "POLÍTICA DE PRIVACIDAD | CONFIGURACIÓN DE PRIVACIDAD | POLÍTICA DE ENLACES | USANDO ESTE SITIO"
+    }
+}

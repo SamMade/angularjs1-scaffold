@@ -1,0 +1,56 @@
+<div class="login-component">
+    <div ng-if="isLoggedIn">
+        Now Logged In
+        <a ng-href="#/dashboard">Go to your dashboard</a>
+    </div>
+
+    <div ng-if="!isLoggedIn">
+
+        <form name="form.loginForm" ng-submit="login()" novalidate>
+
+                <div class="row" ng-if="error">
+                    <div class="col-xs-12 text-center">
+                        <div class="alert alert-warning">There is a problem. {{errorMessage}}</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="inside-label col-xs-12">
+                        <label for="login-username-{{::$id}}"  ng-class="{'invalid': form.loginForm.username.$invalid && !form.loginForm.username.$pristine}">
+                            <i class="fa fa-envelope"></i> Username
+                        </label>
+                        <input id="login-username-{{::$id}}" type="text" name="username" ng-model="loginData.username" required=""  />
+                    </div>
+                </div>
+                <div class="row" ng-if="form.loginForm.username.$invalid && !form.loginForm.username.$pristine">
+                  <p class="help-block">You name is required.</p>
+                </div>
+
+                <div class="row">
+                    <div class="inside-label col-xs-12">
+                        <label for="login-password-{{::$id}}" ng-class="{'invalid': form.loginForm.password.$invalid && !form.loginForm.password.$pristine}">
+                            <i class="fa fa-lock"></i> Password
+                        </label>
+                        <input id="login-password-{{::$id}}" name="password" type="password" ng-model="loginData.password" required=""  />
+                    </div>
+                </div>
+                <div class="row" ng-if="form.loginForm.password.$invalid && !form.loginForm.password.$pristine">
+                  <p class="help-block">Password is required.</p>
+                </div>
+
+                <div class="row" ng-if="isLoading">
+                    <div class="col-xs-12 text-center">
+                        <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>
+                        Loading...
+                    </div>
+                </div>
+
+                <div class="row" ng-if="!isLoading">
+                    <div class="col-xs-12 text-center">
+                        <button type="submit" class="btn btn-black" ng-disabled="form.loginForm.$invalid">Sign In</button>
+                    </div>
+                </div>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "en": {
+    "header": "Welcome to Dashboard",
+    "description": "Sample Description",
+    "button": {
+      "text": "Skip"
+    }
+  },
+  "es": {
+    "header": "Welcome to Dashboard",
+    "description": "Descripción de la muestra",
+    "button": {
+      "text": "Comience"
+    }
+  }
+}

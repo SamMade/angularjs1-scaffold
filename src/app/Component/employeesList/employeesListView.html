@@ -1,0 +1,21 @@
+<div class="employee-list-component row">
+    <div class="employee col-xs-12 col-sm-6 col-lg-4" 
+        ng-repeat="employee in employees | orderBy:['lastName','firstName']">
+        <div class="inner-border">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div ng-if="!employee.profileImage">
+                        <i class="fa fa-user fa-4x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    {{employee.firstName}} {{employee.lastName}}
+                </div>
+                <div class="col-xs-4">
+                    <a class="btn" ng-href="#/employee/{{employee.username}}">Profile</a>
+                    <a class="btn">Send Kudo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

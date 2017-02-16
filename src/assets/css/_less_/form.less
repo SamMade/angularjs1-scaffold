@@ -1,0 +1,26 @@
+@inside-label-size: 12px;
+
+input {
+	width: 100%;
+}
+
+.inside-label {
+	
+	label {
+		position: absolute;
+		padding-top: 1px;
+		padding-left: 3px;
+		font-size: @inside-label-size;
+		line-height: (@inside-label-size + 5);
+		color: @text-light;
+
+		&.invalid {
+			color: @text-error-color;
+		}
+	}
+	input {
+		padding-top: (@inside-label-size + 10);
+		padding-left:5px;
+	}
+
+}
